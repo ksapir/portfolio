@@ -13,7 +13,7 @@ header {
 
 section {
     border: 5px peachpuff solid;
-    display: flex;
+    text-align: center;
 }
 
 nav {
@@ -27,19 +27,30 @@ header h1 {
     color: whitesmoke;
 }
 
+
 h1 {
     font-size: 30px;
 }
 
 article {
     border: 2px black solid;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+
 }
 
-.flex {
-    
+
+img {
+    max-width: 100%;
+}
+
+.photogallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
+#first-project {
+    flex-grow: 2;
 }
 
 #first-img {
@@ -50,4 +61,18 @@ article {
 
 a:visited {
     color: white;
+}
+
+@media screen and(max-width: 900px;){
+    .column {
+        width: 50%;
+    }
+    }
+
+@media screen and(max-width 576px;){
+    nav {
+        display: block;
+        justify-content: center;
+    
+    }
 }
