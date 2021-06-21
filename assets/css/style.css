@@ -1,3 +1,7 @@
+* {
+    font-family: 'Montserrat';
+}
+
 
 header {
     display: flex;
@@ -17,14 +21,13 @@ section {
 nav {
     position: absolute;
     right: 0px; 
-    margin-top: 10px;
+    /* margin-top: 35px; */
 }
 
 header h1 {
-    font-size: 30px;
+    font-size: 50px;
     color: whitesmoke;
 }
-
 
 h1 {
     font-size: 30px;
@@ -33,16 +36,13 @@ h1 {
 
 h3 {
     font-size: 20px;
-    margin: 10px;
+    margin-top: 10px;
 }
 
-article a {
-    margin-top: 0px;
-}
-
-
-img {
-    max-width: 100%;
+article {
+    background-color: #009999;
+    border: 5px solid silver;
+    margin: 5px;
 }
 
 .photogallery {
@@ -72,9 +72,20 @@ a:visited {
     color: white;
 }
 
-@media screen and(max-width: 900px;){
-    .column {
-        width: 25%;
-    }
+@media screen and (max-width: 768px) {
+    nav {
+      display: flex;
+      flex-direction: column;
+      background-color: olive;
+      color: black;
+      border: 2px solid black;
+      margin: 10px;
     }
 
+    section {
+        border: 5px black solid;
+        background-color: olive;
+        text-align: center;
+        color: white;
+    }
+}
