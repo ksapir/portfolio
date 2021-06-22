@@ -2,13 +2,14 @@
     font-family: 'Montserrat';
 }
 
+/* Color variables */
 :root {
     --teal: #009999;
     --olive: olive;
     --black: black;
 }
 
-
+/* Rules for Header*/
 header {
     display: flex;
     font-family: 'Montserrat', sans-serif;
@@ -17,6 +18,7 @@ header {
     background: var(--teal)
 }
 
+/* Rules for every section */
 section {
     border: 5px var(--teal) solid;
     background-color: peachpuff;
@@ -24,33 +26,39 @@ section {
     padding: 10px;
 }
 
+/* Rules for nav bar */
 nav {
     position: absolute;
     right: 0px; 
     margin-top: 35px;
 }
 
+/* Rules for h1 inside header section */
 header h1 {
     font-size: 50px;
     color: whitesmoke;
 }
 
+/* All other h1 rules */
 h1 {
     font-size: 40px;
      margin: 10px;
 }
 
+/* h2 rules */
 h2 {
     font-size: 25px;
     margin-top: 10px;
 }
 
+/* Rules for every article */
 article {
     background-color: var(--teal);
     border: 5px solid silver;
     margin: 5px;
 }
 
+/* Rules for footer */
 footer {
     padding: 15px;
     text-align: center;
@@ -59,26 +67,44 @@ footer {
     color: whitesmoke;
 }
 
+/* Changes email link to white */
+a[href^="mailto"] { color: white; }
+
+/* How images in 'My Work' section look when not hovered */
 .pre-hover {
     opacity: 0.5;
 }
 
+/* How images in 'My Work' section look upon hover */
 .pre-hover:hover {
     opacity: 1.0;
 }
 
+/* Rules for images projects 2-4 */
 .photogallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+/* Removing borders and adding padding to 'My Work' Section */
  #my-work {
      border-bottom: none;
-     border-left: 5px var(--teal) solid;
      padding: 5px;
  }
  
+ /* Border styling for 'projects' section to make section even */
+ #noborder {
+     border-top: none;
+     border-bottom: none;
+ }
+
+  /* Border styling for 'projects' section to make section even */
+ #notopborder {
+     border-top: none;
+ }
+
+ /* Rules to make image fit containers and become flexible with screen size */
  #flex-image {
      display: flex;
      justify-content: center;
@@ -86,10 +112,13 @@ footer {
      margin:0 auto;
  }
 
+ /* Makes nav links white instead of the default blue */
 a:visited {
     color: white;
 }
 
+
+/* For different media screens */
 @media sreen and(max-wdith: 992px){
     img {
         display: flex;
