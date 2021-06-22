@@ -56,6 +56,7 @@ article {
     background-color: var(--teal);
     border: 5px solid silver;
     margin: 5px;
+
 }
 
 /* Rules for footer */
@@ -87,6 +88,13 @@ a[href^="mailto"] { color: white; }
     flex-wrap: wrap;
     justify-content: center;
 }
+ /* Rules to make image fit containers and become flexible with screen size */
+ .flex-image {
+    display: inline-block;
+    justify-content: center;
+    max-width: 100%;
+    margin:0 auto;
+}
 
 /* Removing borders and adding padding to 'My Work' Section */
  #my-work {
@@ -103,14 +111,6 @@ a[href^="mailto"] { color: white; }
   /* Border styling for 'projects' section to make section even */
  #notopborder {
      border-top: none;
- }
-
- /* Rules to make image fit containers and become flexible with screen size */
- #flex-image {
-     display: flex;
-     justify-content: center;
-     max-width: 100%;
-     margin:0 auto;
  }
 
  /* Makes nav links white instead of the default blue */
