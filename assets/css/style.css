@@ -2,18 +2,23 @@
     font-family: 'Montserrat';
 }
 
+:root {
+    --teal: #009999;
+    --olive: olive;
+    --black: black;
+}
+
 
 header {
     display: flex;
     font-family: 'Montserrat', sans-serif;
     padding: 15px;
-    width: 100vw;
     height: 100%;
-    background: #009999
+    background: var(--teal)
 }
 
 section {
-    border: 5px #009999 solid;
+    border: 5px var(--teal) solid;
     background-color: peachpuff;
     text-align: center;
     padding: 10px;
@@ -22,7 +27,7 @@ section {
 nav {
     position: absolute;
     right: 0px; 
-    /* margin-top: 35px; */
+    margin-top: 35px;
 }
 
 header h1 {
@@ -31,71 +36,95 @@ header h1 {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 40px;
      margin: 10px;
 }
 
-h3 {
-    font-size: 20px;
+h2 {
+    font-size: 25px;
     margin-top: 10px;
 }
 
 article {
-    background-color: #009999;
+    background-color: var(--teal);
     border: 5px solid silver;
     margin: 5px;
-   
 }
 
 footer {
     padding: 15px;
     text-align: center;
-    border: 5px #009999 solid;
-    background-color: #009999;
+    border: 5px var solid;
+    background-color: var(--teal);
     color: whitesmoke;
+}
+
+.pre-hover {
+    opacity: 0.5;
+}
+
+.pre-hover:hover {
+    opacity: 1.0;
 }
 
 .photogallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: space-between;
 }
-
-#first-project {
-    flex-grow: 2;
-}
-
-#first-img {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
- }
 
  #my-work {
      border-bottom: none;
+     border-left: 5px var(--teal) solid;
      padding: 5px;
  }
-
+ 
+ #flex-image {
+     display: flex;
+     justify-content: center;
+     max-width: 100%;
+     margin:0 auto;
+ }
 
 a:visited {
     color: white;
+}
+
+@media sreen and(max-wdith: 992px){
+    img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        flex-shrink: 2;
+    } 
 }
 
 @media screen and (max-width: 768px) {
     nav {
       display: flex;
       flex-direction: column;
-      background-color: olive;
-      color: black;
-      border: 2px solid black;
+      background-color: var(--olive);
+      color: var(--black);
+      border: 2px solid var(--black);
       margin: 10px;
     }
 
     section {
-        border: 5px black solid;
-        background-color: olive;
+        border: 5px var(--black) solid;
+        background-color: var(--olive);
         text-align: center;
         color: white;
+    }
+
+    img {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        flex-shrink: 2;
+    }
+
+    article {
+        border: 5px khaki solid;
     }
 }
