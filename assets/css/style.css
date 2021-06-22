@@ -70,6 +70,7 @@ footer {
 /* Changes email link to white */
 a[href^="mailto"] { color: white; }
 
+
 /* How images in 'My Work' section look when not hovered */
 .pre-hover {
     opacity: 0.5;
