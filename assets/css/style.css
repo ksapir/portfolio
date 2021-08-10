@@ -114,6 +114,13 @@ a[href^="mailto"] { color: white; }
      border-bottom: none;
  }
 
+#scroll {
+    max-height: 100vh;
+    overflow: scroll;
+    margin: 15px;
+    border: 1px black solid;
+}
+
   /* Border styling for 'projects' section to make section even */
  #notopborder {
      border-top: none;
