@@ -6,10 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" text="style/css" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css">
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">   
-    <link rel="stylesheet"href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200&family=Spartan:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Karen's Portfolio</title>
 </head>
 
@@ -17,104 +21,113 @@
     <!-- Header Section with nav links -->
     <header>
         <h1>Karen Pion</h1>
-            <nav>
-                <a href="#about-me">About Me</a>
-                <a href="#my-work">My Work</a>
-                <a href="#contact-me">Contact Me</a>
-                <a href="#my-resume">My Resume</a>
-            </nav>
+        <nav style="margin-right: 20px;">
+            <a href="#about-me">About Me</a>
+            <a href="#my-work">My Work</a>
+            <a href="#contact-me">Contact Me</a>
+            <a href="#my-resume">My Resume</a>
+        </nav>
     </header>
 
-    <section>
-        <img src="./assets/images/Karenpion.jpg" alt="Karen's Picture"/>
-    </section>
-
-<br>
-
-<main>
-   <!-- About Me Section -->
-    <section id="about-me">
-        <h1>About Me</h1>
-        <p>Hello! Welcome to my portfolio and thank you for visiting. My name is Karen Pion and I am a software developer. Making web applications is my thing. From front end to back end, I've got you covered as a full stack developer. I graduated from the University of Washington's Full Stack Coding Bootcamp and I am on my forever coding journey. Although I love the whole process of building tech, what I find the most passion for is styling tech and just making things look nice, cohesive and have the user experience be elevated just by visiting. Contact me for anything coding and developing.</p>
-
-        <br>
-    </section>
-
-    <br><br>
+    <div class="container">
+        <div class="col-sm-12 col-md-12 col-lg-12 center" id="about-me">
+            <img style="float: left; margin: 0px 15px 15px 0px;" src="./assets/images/Karenpion.jpg"
+                alt="Karen's Picture" />
+            <!-- About Me Section -->
+            <h1>About Me</h1>
+            <p>Hello! Welcome to my portfolio and thank you for visiting. My name is Karen Pion and I am a
+                software
+                developer. Making web applications is my thing. From front end to back end, I've got you covered
+                as a
+                full stack developer. I graduated from the University of Washington's Full Stack Coding Bootcamp
+                and I
+                am on my forever coding journey. Although I love the whole process of building tech, what I find
+                the
+                most passion for is styling tech and just making things look nice, cohesive and have the user
+                experience
+                be elevated just by visiting. Contact me for anything coding and developing.</p>
+        </div>
+    </div>
+    <br>
 
     <!-- My Work Header -->
-    <section id="my-work">
-            <h1>My Work</h1>
-    </section>
-
-    <!-- Recipe Finder Section -->
-        <section>
-            <article class="flex-image" id="notopborder">
-                <h2>Special Recipe Finder Web App</h2>
-                <a href="https://ksapir.github.io/recipe-finder" target="_blank"><img class="pre-hover flex-image" src="./assets/images/recipe-finder-recipe.png" alt="Recipe Finder Image"></a>
-                <a href="https://github.com/ksapir/recipe-finder" target="_blank">Repository</a>
-            </article>
-        </section>
-
-    <!-- Weather Dashboard Section -->
-    <div class="grid-x">
-        <div class="cell small-6">
-        <!-- <section class="photogallery" id="notopborder"> -->
-            <article>
-                <h2>Weather Dashboard Web App</h2>
-                <a href="https://ksapir.github.io/weather-dashboard" target="_blank"><img class="pre-hover" src="./assets/images/weather-dashboard.png" alt="Weather Dashboard Image"></a>
-                <a href="https://github.com/ksapir/weather-dashboard" target="_blank">Repository</a>
-             </article>
-            </div>
-    
-        <!-- Work Day Scheduler Section -->
-        <div class="cell small-6">
-            <article>
-                <h2>Work Day Scheduler</h2>
-                <a href="https://ksapir.github.io/work-day-scheduler" target="_blank"><img class="pre-hover" src="./assets/images/work-day-scheduler.png" alt="Work Day Scheduler Image"></a>
-                <a href="https://github.com/ksapir/work-day-scheduler" target="_blank">Repository</a>
-            </article>
+    <div class="container center border" id="my-work">
+        <h1>My Work</h1>
+        <!-- Perfect Home Section -->
+        <div>
+            <h2>Perfect Home </h2>
+            <a href="https://perfect-home-finder.herokuapp.com/" target="_blank"><img class="pre-hover"
+                    src="./assets/images/perfect-home.png" alt="Perfect Home Image"></a>
+            <a href="https://github.com/KeithMurph/PerfectHome" target="_blank">Click here to go to the repository</a>
         </div>
-        <!-- </section> -->
+        <br>
+        <!-- Recipe Finder Section -->
+        <div class="row">
+            <div class="col-sm-12 col-md-3 col-lg-3 center project-gallery">
+                <h2>Special Recipe Finder Web App</h2>
+                <a href="https://ksapir.github.io/recipe-finder" target="_blank"><img class="pre-hover"
+                        src="./assets/images/recipe-finder-recipe.png" alt="Recipe Finder Image"></a>
+                <a href="https://github.com/ksapir/recipe-finder" target="_blank">Click here to go to the repository</a>
+            </div>
+
+            <!-- Weather Dashboard Section -->
+            <div class="col-sm-12 col-md-3 col-lg-3 center project-gallery">
+                <h2>Weather Dashboard Web App</h2>
+                <a href="https://ksapir.github.io/weather-dashboard" target="_blank"><img class="pre-hover"
+                        src="./assets/images/weather-dashboard.png" alt="Weather Dashboard Image"></a>
+                <a href="https://github.com/ksapir/weather-dashboard" target="_blank">Click here to go to the
+                    repository</a>
+            </div>
+
+            <!-- Work Day Scheduler Section -->
+            <div class="col-sm-12 col-md-3 col-lg-3 center project-gallery">
+                <h2>Work Day Scheduler</h2>
+                <a href="https://ksapir.github.io/work-day-scheduler" target="_blank"><img class="pre-hover"
+                        src="./assets/images/work-day-scheduler.png" alt="Work Day Scheduler Image"></a>
+                <a href="https://github.com/ksapir/work-day-scheduler" target="_blank">Click here to go to the
+                    repository</a>
+            </div>
+        </div>
     </div>
 
-<br>
-<!-- Contact Me Section -->
-    <section id="contact-me">
-        <h1>Contact Me</h1>
+    <br>
+    <!-- Contact Me Section -->
+    <div class="container">
+        <div class="center border" id="contact-me">
+            <h1>Contact Me</h1>
             <p>(561) 441-2962</p>
-        <br>
-            <a href="mailto: karenlpion@gmail.com">Email</a>    
-        <br> <br>
-            <a href="https://github.com/ksapir" target="_blank">Github</a>
-        <br><br>
+            <a href="mailto: karenlpion@gmail.com">Email |</a>
+            <a href="https://github.com/ksapir" target="_blank">Github |</a>
             <a href="https://www.linkedin.com/in/karenpion/" target="_blank">LinkedIn</a>
-    </section>
-
-<br>
-
-<!-- My Resume Section -->
-    <section id="my-resume">
-        <h1>My Resume</h1>
-        <div id="scroll">
-        <a href="./assets/images/karen-resume.pdf" target="_blank" download>
-        <img class="flex-image" src="./assets/images/karen-resume.jpg" alt="My Resume"/></a>
-        <a href="./assets/images/karen-resume.pdf" target="_blank" download>
-        <img class="flex-image" src="./assets/images/karen-resume-1.jpg" alt="My Resume Page 2"/>
-        </a>
         </div>
-    </section>
-<br>
+    </div>
+    <br>
 
-<!-- Footer Section -->
+    <!-- My Resume Section -->
+    <div class="container">
+        <div class="center border" id="my-resume">
+            <h1>My Resume</h1>
+            <div id="scroll">
+                <a href="./assets/images/karen-resume.pdf" target="_blank" download>
+                    <img class="flex-image" src="./assets/images/karen-resume.jpg" alt="My Resume" /></a>
+                <a href="./assets/images/karen-resume.pdf" target="_blank" download>
+                    <img class="flex-image" src="./assets/images/karen-resume-1.jpg" alt="My Resume Page 2" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- Footer Section -->
     <footer>
-       <p>
-           &copy; Karen Pion
-       </p> 
+        <p>
+            &copy; Karen Pion
+        </p>
     </footer>
 
-</main>
-
-<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

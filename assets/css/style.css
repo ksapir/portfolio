@@ -1,25 +1,22 @@
-/* Color variables */
-:root {
-    --teal: #009999;
-    --olive: olive;
-    --black: black;
+* {
+    margin: auto;
+    padding: auto;
+}
+
+
+body {
+    background-image: linear-gradient(#649173, #DBD5A4);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Rules for Header*/
 header {
     display: flex;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Spartan', sans-serif;
     padding: 15px;
     height: 100%;
-    background: var(--teal)
-}
-
-/* Rules for every section */
-section {
-    border: 5px var(--teal) solid;
-    background-color: peachpuff;
-    text-align: center;
-    padding: 10px;
 }
 
 /* Rules for nav bar */
@@ -27,42 +24,32 @@ nav {
     position: absolute;
     right: 0px; 
     margin-top: 35px;
-    color: var(--black);
 }
 
 /* Rules for h1 inside header section */
 header h1 {
     font-size: 50px;
+    font-weight: bold;
     color: white;
 }
 
 /* All other h1 rules */
 h1 {
     font-size: 40px;
-     margin: 10px;
-     font-family: 'Montserrat';
+    margin: 10px;
+    font-family: 'Montserrat';
+    font-weight: bold;
 }
 
 /* h2 rules */
 h2 {
     font-size: 25px;
-    margin-top: 10px;
-}
-
-/* Rules for every article */
-article {
-    background-color: var(--teal);
-    border: 5px solid silver;
-    margin: 5px;
-
+    font-family: 'Montserrat';
 }
 
 /* Rules for footer */
 footer {
-    padding: 15px;
     text-align: center;
-    border: 5px var solid;
-    background-color: var(--teal);
 }
 
 img {
@@ -70,70 +57,60 @@ img {
     max-height: 100%;
 }
 
-a {
-    color: black;
-}
-
 /* Changes email link to white */
 a[href^="mailto"] { color: white; }
 
+.center {
+    align-content: center;
+    text-align: center;
+
+}
+
+.border {
+    border: 2px solid black !important;
+}
 
 /* How images in 'My Work' section look when not hovered */
 .pre-hover {
-    opacity: 0.5;
+    opacity: 1.0;
 }
 
 /* How images in 'My Work' section look upon hover */
 .pre-hover:hover {
-    opacity: 1.0;
+    opacity: 0.5;
 }
 
-/* Rules for images projects 2-4 */
-.photogallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
- /* Rules to make image fit containers and become flexible with screen size */
- .flex-image {
-    display: inline-block;
-    justify-content: center;
-    max-width: 100%;
-    margin:0 auto;
+#about-me {
+    text-align: left;   
 }
 
-/* Removing borders and adding padding to 'My Work' Section */
- #my-work {
-     border-bottom: none;
-     padding: 5px;
- }
- 
- /* Border styling for 'projects' section to make section even */
- #noborder {
-     border-top: none;
-     border-bottom: none;
- }
+#about-me p {
+    line-height: 35px;
+}
 
 #scroll {
-    max-height: 100vh;
+    max-height: 400px;
     overflow: scroll;
     margin: 15px;
     border: 1px black solid;
 }
 
-  /* Border styling for 'projects' section to make section even */
- #notopborder {
-     border-top: none;
- }
-
-section a {
-    color:black;
+#my-resume {
+    max-height: 500px;
 }
- /* Makes nav links white instead of the default blue */
+
+
 a:visited {
     color: white;
 }
 
+.project-gallery {
+    margin: 20px;
+    padding: 10px;
+
+    width: 25vw;
+    color: white;
+}
 
 /* For different media screens */
 @media sreen and(max-wdith: 992px){
@@ -150,17 +127,8 @@ a:visited {
     nav {
       display: flex;
       flex-direction: column;
-      background-color: var(--olive);
-      color: var(--black);
       border: 2px solid var(--black);
       margin: 10px;
-    }
-
-    section {
-        border: 5px var(--black) solid;
-        background-color: var(--olive);
-        text-align: center;
-        color: white;
     }
 
     img {
@@ -170,7 +138,3 @@ a:visited {
         flex-shrink: 2;
     }
 
-    article {
-        border: 5px khaki solid;
-    }
-}
