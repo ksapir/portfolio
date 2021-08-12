@@ -8,7 +8,7 @@ One can easily navigate my porfolio, not only by using the navigation bar but al
 
 
 # Sample Image
-![portfolio picture](./assets/images/myportfolioimage.png)
+![portfolio picture](./assets/images/professional-portfolio.png)
 
 # Deployed Page
 Find my professional portfolio [here](https://ksapir.github.io/portfolio/).

@@ -92,12 +92,18 @@ a[href^="mailto"] { color: white; }
     max-height: 300px;
     max-width: 700px;
     overflow: scroll;
-    margin: 15px;
     border: 1px black solid;
 }
 
 #my-resume {
     text-align: center;
+}
+
+#flex-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 
@@ -140,4 +146,4 @@ a:visited {
     .reduce {
         font-size: 18px;
     }
-
+}
